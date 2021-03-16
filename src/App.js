@@ -1,7 +1,5 @@
 function App() {
 
-  const name = "Kumar";
-
   return (
     <div className="container">
       <h1>
