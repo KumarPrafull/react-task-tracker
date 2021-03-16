@@ -1,13 +1,10 @@
+import Header from './components/Header';
+
 function App() {
 
   return (
     <div className="container">
-      <h1>
-       Hello React Task
-      </h1>
-      <h2>
-        This is your to-do list.
-      </h2>
+      <Header title='Hello' />
     </div>
   );
 }
