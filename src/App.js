@@ -8,8 +8,8 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: 'Read for BPSC',
-      time: 'Mar 18, 2021, 11.00 am',
+      text: 'Learn Ruby on Rails',
+      time: '3 months',
       reminder: true,
     },
   
@@ -17,14 +17,63 @@ function App() {
     {
       id: 2,
       text: 'Learn Python Django',
-      time: 'Mar 22, 2021, 11.00 am',
+      time: '3 months',
       reminder: true,
     },
-  
+    
     {
       id: 3,
-      text: 'Learn React',
-      time: 'Mar 23, 2021, 11.00 am',
+      text: 'JavaScript, CSS, HTML',
+      time: '3 months',
+      reminder: false,
+    },
+
+    {
+      id: 4,
+      text: 'React & Node',
+      time: '3 months',
+      reminder: true,
+    },
+
+    {
+      id: 5,
+      text: 'Angular',
+      time: '3 months',
+      reminder: true,
+    },
+
+    {
+      id: 6,
+      text: 'Java and Spring Boot',
+      time: '3 months',
+      reminder: true,
+    },
+
+    {
+      id: 7,
+      text: 'Vue.js',
+      time: '3 months',
+      reminder: false,
+    },
+
+    {
+      id: 8,
+      text: 'Android Kotlin',
+      time: '3 months',
+      reminder: false,
+    },
+
+    {
+      id: 9,
+      text: 'React Native',
+      time: '3 months',
+      reminder: false,
+    },
+
+    {
+      id: 10,
+      text: 'PHP & Laravel',
+      time: '3 months',
       reminder: false,
     },
     
@@ -52,7 +101,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header onAdd={() => setShowAddTask(!showAddTask)} />
+      <Header onAdd={() => setShowAddTask(!showAddTask)}  showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ?
         <Tasks tasks={tasks} id={tasks.id} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No tasks to show'}
