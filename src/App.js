@@ -9,74 +9,25 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: 'Ruby on Rails',
-      time: '3 months',
+      text: 'Deliver Ruby on Rails Project',
+      time: '12 March 2021',
       reminder: true,
     },
   
   
     {
       id: 2,
-      text: 'Python Django',
-      time: '3 months',
+      text: 'Start Python Django React App',
+      time: '18 March 2021',
       reminder: true,
     },
     
     {
       id: 3,
-      text: 'JavaScript, CSS, HTML',
-      time: '3 months',
+      text: 'Update PHP-Wordpress Blog',
+      time: '22 March 2021',
       reminder: false,
-    },
-
-    {
-      id: 4,
-      text: 'React & Node',
-      time: '3 months',
-      reminder: true,
-    },
-
-    {
-      id: 5,
-      text: 'Angular',
-      time: '3 months',
-      reminder: true,
-    },
-
-    {
-      id: 6,
-      text: 'Java and Spring Boot',
-      time: '3 months',
-      reminder: true,
-    },
-
-    {
-      id: 7,
-      text: 'Vue.js',
-      time: '3 months',
-      reminder: false,
-    },
-
-    {
-      id: 8,
-      text: 'Android Kotlin',
-      time: '3 months',
-      reminder: false,
-    },
-
-    {
-      id: 9,
-      text: 'React Native',
-      time: '3 months',
-      reminder: false,
-    },
-
-    {
-      id: 10,
-      text: 'PHP & Laravel',
-      time: '3 months',
-      reminder: false,
-    },
+    }
     
   ])
 
