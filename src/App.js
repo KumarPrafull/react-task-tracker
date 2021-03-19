@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Tasks from './components/Tasks';
 import { useState } from 'react';
 import AddTask from './components/AddTask'
@@ -8,7 +9,7 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: 'Learn Ruby on Rails',
+      text: 'Ruby on Rails',
       time: '3 months',
       reminder: true,
     },
@@ -16,7 +17,7 @@ function App() {
   
     {
       id: 2,
-      text: 'Learn Python Django',
+      text: 'Python Django',
       time: '3 months',
       reminder: true,
     },
@@ -105,6 +106,7 @@ function App() {
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ?
         <Tasks tasks={tasks} id={tasks.id} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No tasks to show'}
+      <Footer />
     </div>
   );
 }

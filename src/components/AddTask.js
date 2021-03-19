@@ -25,15 +25,15 @@ const AddTask = ({ onAdd }) => {
   return (
     <form className='add-form' onSubmit={onSubmit} >
       <div className='form-control' >
-        <label>Dev Skill</label>
+        <label>Task</label>
         <input type='text' value={text} onChange={(e) => setText(e.target.value)} ></input>
       </div>
       <div className='form-control' >
-        <label>Duration</label>
+        <label>Deadline</label>
         <input type='text'  value={time} onChange={(e) => setTime(e.target.value)}></input>
       </div>
       <div className='form-control form-control-check' >
-        <label>Done or Not</label>
+        <label>Important</label>
         <input type='checkbox' checked={reminder}  value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}/>
       </div>
       <div className='form-control' >
