@@ -1,10 +1,9 @@
-import React from 'react'
-
 const About = () => {
   return (
-    <div className='container'>
-      <h1>About Task Tracker App</h1>
-      <p>Organize your tasks in simple and easy way.</p>
+    <div>
+      <h3>About us</h3>
+      <p>Version: 1.0.0</p>
+      <a href='/'>Go Back</a>
     </div>
   )
 }
